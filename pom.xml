@@ -25,6 +25,7 @@
         <maven.compiter.target>${java.version}</maven.compiter.target>
         <mapstruct.version>1.4.2.Final</mapstruct.version>
         <awaitility.version>4.0.3</awaitility.version>
+        <logstash.logback.version>7.0.1</logstash.logback.version>
     </properties>
 
     <dependencyManagement>
@@ -79,6 +80,21 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-artemis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.statemachine</groupId>
+            <artifactId>spring-statemachine-core</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
+            <version>${logstash.logback.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
